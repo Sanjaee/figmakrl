@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+.kirinavbar img {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.kanannavbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.kanannavbar li {
+  margin-right: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pesantiket {
+  color: #002662;
+}
+
+.kanannavbar img {
+  margin-left: auto;
+  margin-right: 40px;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+.bar {
+  background-color: #002662;
+  margin: 6px 0;
+  z-index: 99;
+}
+@media only screen and (max-width: 767px) {
+  .navbar {
+    height: 60px;
+  }
+  .kanannavbar ul {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .kanannavbar ul.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: static;
+  }
+
+  .kanannavbar li {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .kanannavbar img {
+    margin: 10px auto;
+  }
+
+  .logokreta {
+    width: 100px;
+  }
+  .mobile {
+    background-color: gray;
+    z-index: 99;
+  }
+}
